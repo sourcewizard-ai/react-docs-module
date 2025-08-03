@@ -1,0 +1,99 @@
+{
+  "name": "react-docs-module",
+  "version": "0.1.0",
+  "description": "Embeddable documentation page with search and AI chat",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "development": "./index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./config": {
+      "development": "./config.ts",
+      "types": "./dist/config.d.ts",
+      "import": "./dist/config.js"
+    },
+    "./search": {
+      "development": "./search.tsx",
+      "types": "./dist/search.d.ts", 
+      "import": "./dist/search.js"
+    },
+    "./chat-api": {
+      "development": "./chat-api.ts",
+      "types": "./dist/chat-api.d.ts",
+      "import": "./dist/chat-api.js"
+    },
+    "./mdx": {
+      "development": "./mdx.ts",
+      "types": "./dist/mdx.d.ts",
+      "import": "./dist/mdx.js"
+    },
+    "./utils": {
+      "development": "./util.ts",
+      "types": "./dist/util.d.ts",
+      "import": "./dist/util.js"
+    }
+  },
+  "files": [
+    "dist",
+    "*.ts",
+    "*.tsx",
+    "mdx/",
+    "ui/",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "@ai-sdk/anthropic": "^2.0.0",
+    "@ai-sdk/groq": "^1.2.9",
+    "@ai-sdk/openai": "^2.0.0",
+    "@radix-ui/react-dialog": "^1.1.4",
+    "@radix-ui/react-slot": "^1.1.0",
+    "ai": "^4.3.19",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.456.0",
+    "next-mdx-remote": "^5.0.0",
+    "react-markdown": "^9.1.0",
+    "react-syntax-highlighter": "^15.6.1",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.1",
+    "@types/react-dom": "^19.1.2",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit --skipLibCheck"
+  },
+  "keywords": [
+    "documentation",
+    "mdx",
+    "search",
+    "ai-chat",
+    "react",
+    "typescript",
+    "mintlify"
+  ],
+  "author": "Ivan Chebykin",
+  "license": "MIT",
+  "readme": "README.md",
+  "homepage": "https://github.com/sourcewizard-ai/react-docs-module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sourcewizard-ai/react-docs-module.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sourcewizard-ai/react-docs-module/issues"
+  }
+}
