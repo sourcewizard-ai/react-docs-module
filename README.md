@@ -7,11 +7,9 @@ A powerful, embeddable documentation system with built-in search and AI chat cap
 - 🎨 **Themeable** - Customize colors and appearance via `docs.json` configuration
 - 🔍 **Full-text Search** - Fast, client-side search with caching
 - 🤖 **AI Chat** - Integrated AI assistant for documentation Q&A
-- 📱 **Responsive** - Mobile-friendly design with adaptive layouts
-- ⚡ **Fast** - Built with Next.js and optimized for performance
-- 🎯 **TypeScript** - Full type safety and excellent DX
-- 📝 **MDX Support** - Rich content with React components
+- 📝 **MDX Support** - Write docs in Markdown with custom components
 - 📋 **Mintlify Compatible** - Full support for Mintlify docs.json schema
+- 📱 **Responsive** - Mobile-friendly design with adaptive layouts
 
 ## Quick Start
 
